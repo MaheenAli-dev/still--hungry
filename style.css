@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(eat.jpg);
+    height: 170vh;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+
+
+}
+
+.name {
+    position: fixed;
+    float: left;
+
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(247, 184, 129);
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Pacifico', cursive;
+    margin-left: 10px;
+    margin-top: 12px;
+
+
+
+}
+
+nav ul {
+
+    color: rgb(247, 184, 129);
+    padding: 15px;
+    text-align: center;
+    transition: 1s;
+    background-color: black;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 184, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+
+
+}
+
+
+
+
+
+.menubar ul li:hover {
+    background-color: rgb(51, 50, 50);
+    border-radius: 2px;
+
+
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menubar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    margin-top: -0px;
+    margin-left: -15px;
+
+
+}
+
+.menubar ul li:hover .sub-menu-1 ul {
+    margin: 10px;
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+.menubar ul li:hover .sub-menu-1 ul li {
+    width: 100px;
+    padding: 5px;
+    border-bottom: 1px dotted sandybrown;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+
+
+.menubar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .sub-menu-1 ul li a:hover {
+    color: grey;
+}
